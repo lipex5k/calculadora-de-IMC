@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="img"> 
+        <img src="./assets/img/midia1.ico" alt="">
+      </section>
+      
+      <section id="caculator">
+        <form action="">
+          <h1 id="title">Calculadora - IMC</h1>
+        </form>
+
+        <div class="input-box">
+          <label for="weight" id="form"> peso em kg </label>
+          <div class="input-field">
+            <i class="fa-sharp fa-solid fa-scale-balanced"></i>
+            <input
+              type="number"
+              id="weight"
+              required
+                          />
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="height" id="form"> Tamanho em Metros</label>
+          <div class="input-field">
+            <i class="fa-solid fa-person"></i>
+            <input
+              type="number"
+              id="height"
+              required
+                          />
+          </div>
+        </div>
+        <button id="calcular">Calcular IMC</button>
+        
+
+
+
+
+        <div id="info" class="hidden">
+          <div id="resultado">
+            <div id="bmi">
+              <span id="value"></span>
+              <span>seu IMC</span>
+            </div>
+            <div id="descricao">
+              <span></span>
+            </div>
+            <div id="moreinfo">
+              <a href="" aria-placeholder="">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                MAIS INFORMAÇOES SOBRE IMC
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
